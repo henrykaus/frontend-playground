@@ -1,3 +1,9 @@
+body {
+  background-image: url('../img/card-scroll.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .card-scroll {
   display: flex;
   flex-wrap: nowrap;
@@ -8,28 +14,71 @@
   gap: 2em;
 }
 
+.card-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   position: relative;
-  width: 400px;
-  height: 250px;
-  border: 2px solid lightgray;
+  width: 350px;
+  height: 220px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
   flex-shrink: 0;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1em;
 }
 
-.card footer {
+.card h2 {
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.card .number {
+  margin-top: 8em;
+}
+
+.card .type {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 75px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 8px 8px;
 }
 
-.card footer p {
-  color: white;
-  margin: 0.5em;
-  font-weight: 500;
+.card:nth-child(1) .type {
+  right: 1em;
+  bottom: 0;
+}
+
+.card:nth-child(2) .type {
+  transform: rotate(270deg);
+  right: 0;
+  top: 2em;
+}
+
+.card:nth-child(3) .type {
+  right: 1em;
+  bottom: 0;
+}
+
+.card:nth-child(4) .type {
+  right: 1em;
+  top: 0;
+}
+
+.card:nth-child(5) .type {
+  right: 1em;
+  bottom: 0;
+}
+
+.card:nth-child(6) .type {
+  right: 1em;
+  top: 0;
+  text-align: right;
+  line-height: 100%;
+}
+
+.card:nth-child(7) .type {
+  transform: rotate(270deg);
+  right: -0.7em;
+  top: 2em;
 }
