@@ -10,16 +10,16 @@ body {
 }
 
 .home-link {
-  display: inline-block;
   background-color: white;
   border-radius: 0 0 8px 0;
-  padding: 0.7em;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-  text-decoration: none;
   color: black;
-  transition: 75ms ease-out;
+  display: inline-block;
   font-size: 1.1em;
   font-weight: 500;
+  padding: 0.7em;
+  text-decoration: none;
+  transition: 75ms ease-out;
 }
 
 .home-link:hover {

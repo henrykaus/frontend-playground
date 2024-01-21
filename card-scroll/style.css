@@ -1,17 +1,16 @@
 body {
   background-image: url('../img/card-scroll.png');
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-scroll {
+  align-items: center;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: visible;
-  height: 400px;
-  align-items: center;
   gap: 2em;
+  height: 400px;
+  overflow-x: scroll;
 }
 
 .card-scroll::-webkit-scrollbar {
@@ -19,22 +18,22 @@ body {
 }
 
 .card {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  height: 220px;
+  padding: 1em;
   position: relative;
   width: 350px;
-  height: 220px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.6);
-  flex-shrink: 0;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 1em;
 }
 
 .card h2 {
-  margin-top: 1em;
-  font-weight: 600;
   font-size: 1em;
+  font-weight: 600;
+  margin-top: 1em;
 }
 
 .card .number {
@@ -46,19 +45,19 @@ body {
 }
 
 .card:nth-child(1) .type {
-  right: 1em;
   bottom: 0;
+  right: 1em;
 }
 
 .card:nth-child(2) .type {
-  transform: rotate(270deg);
   right: 0;
   top: 2em;
+  transform: rotate(270deg);
 }
 
 .card:nth-child(3) .type {
-  right: 1em;
   bottom: 0;
+  right: 1em;
 }
 
 .card:nth-child(4) .type {
@@ -67,19 +66,19 @@ body {
 }
 
 .card:nth-child(5) .type {
-  right: 1em;
   bottom: 0;
+  right: 1em;
 }
 
 .card:nth-child(6) .type {
-  right: 1em;
-  top: 0;
-  text-align: right;
   line-height: 100%;
+  right: 1em;
+  text-align: right;
+  top: 0;
 }
 
 .card:nth-child(7) .type {
-  transform: rotate(270deg);
   right: -0.7em;
   top: 2em;
+  transform: rotate(270deg);
 }
