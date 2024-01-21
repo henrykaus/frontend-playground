@@ -11,8 +11,8 @@ const getScale = (position, halfwayPoint) => {
 
 const getZIndex = (position, halfwayPoint) => {
   const difference = Math.abs(position - halfwayPoint);
-  const rangeOfValues = 0.15 * (halfwayPoint * 2);
-  if (position > halfwayPoint - cardWidth && position < halfwayPoint + cardWidth / 2) {
+  const rangeOfValues = 0.20 * (halfwayPoint * 2);
+  if (position > halfwayPoint - cardWidth / 2 && position < halfwayPoint + cardWidth / 2) {
     return 3;
   } else if (difference > halfwayPoint - rangeOfValues) {
     return 1;
