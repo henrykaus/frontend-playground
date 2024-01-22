@@ -1,5 +1,6 @@
 body {
   background-attachment: fixed;
+  background-color: #e8ebf2;
   background-image: url('../img/card-scroll.png');
   background-repeat: no-repeat;
   background-size: cover;
