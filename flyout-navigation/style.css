@@ -83,11 +83,3 @@ article > a {
   font-weight: 200;
   margin-bottom: 1em;
 }
-
-footer {
-  bottom: 0;
-  padding: 1em;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
