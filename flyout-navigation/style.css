@@ -66,7 +66,7 @@ section > article {
   flex-direction: column;
   gap: 0.12em;
   opacity: 0;
-  transition: opacity 0.65s cubic-bezier(0.91,-0.05,.85,.55);
+  transition: opacity 0.65s cubic-bezier(0.91, -0.05, 0.85, 0.55);
 }
 
 .fade-out {
