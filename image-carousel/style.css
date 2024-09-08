@@ -1,0 +1,84 @@
+button {
+  cursor: pointer;
+}
+
+.instruction-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  max-height: 300px;
+}
+
+.expand-btn {
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.5em;
+  border: none;
+  border-radius: 5px;
+  color: grey;
+}
+
+.icon {
+  height: 2em;
+  width: 2em;
+}
+
+/* CAROUSEL */
+.carousel {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.shown {
+  display: flex;
+}
+
+.carousel-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#close-image {
+  position: absolute;
+  top: 0.5em;
+  right: 0.25em;
+  color: white;
+  background: none;
+  border: none;
+}
+
+#prev-img-arrow,
+#next-img-arrow {
+  position: absolute;
+  top: 50%;
+  display: none;
+  background: none;
+  color: white;
+  border: none;
+}
+
+#prev-img-arrow {
+  left: 0;
+}
+#next-img-arrow {
+  right: 0;
+}
+
+#prev-img-arrow.shown,
+#next-img-arrow.shown {
+  display: block;
+}
+
