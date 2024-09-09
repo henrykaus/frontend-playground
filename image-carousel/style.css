@@ -1,3 +1,7 @@
+.home-link {
+  background-color: #e4e7ee;
+}
+
 button {
   cursor: pointer;
 }
@@ -5,32 +9,54 @@ button {
 .instruction-card {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 0.5em;
+}
+
+.image-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 0.3em;
 }
 
 .image-container {
   position: relative;
+  display: inline-block;
 }
 
 .image {
   max-height: 300px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 .expand-btn {
-  position: absolute;
-  right: 0.5em;
-  bottom: 0.5em;
+  align-items: center;
+  background: rgba(31, 31, 31, 0.7);
+  border-radius: 50%;
   border: none;
-  border-radius: 5px;
-  color: grey;
+  bottom: 0.85em;
+  color: rgb(230, 230, 230);
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  right: 0.6em;
+  width: 36px;
+}
+
+.expand-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .icon {
-  height: 2em;
-  width: 2em;
+  height: 1.25em;
+  width: 1.25em;
 }
 
 /* CAROUSEL */
-.carousel {
+#carousel {
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
@@ -42,7 +68,7 @@ button {
   justify-content: center;
 }
 
-.carousel.shown {
+#carousel.shown {
   display: flex;
 }
 
@@ -53,32 +79,54 @@ button {
 
 #close-image {
   position: absolute;
-  top: 0.5em;
-  right: 0.25em;
+  padding: 0;
+  top: 1em;
+  right: 1em;
   color: white;
   background: none;
   border: none;
+}
+
+#close-image .icon {
+  height: 2.5em;
+  width: 2.5em;
 }
 
 #prev-img-arrow,
 #next-img-arrow {
   position: absolute;
-  top: 50%;
+  padding: 0;
+  top: calc(50% - 25px);
   display: none;
   background: none;
   color: white;
   border: none;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+
+#prev-img-arrow .icon,
+#next-img-arrow .icon {
+  height: 3.75em;
+  width: 3.75em;
+}
+
+#close-image:hover,
+#prev-img-arrow:hover,
+#next-img-arrow:hover {
+  color: lightgrey;
 }
 
 #prev-img-arrow {
-  left: 0;
+  left: 0.5em;
 }
 #next-img-arrow {
-  right: 0;
+  right: 0.5em;
 }
 
 #prev-img-arrow.shown,
 #next-img-arrow.shown {
-  display: block;
+  display: flex;
 }
-

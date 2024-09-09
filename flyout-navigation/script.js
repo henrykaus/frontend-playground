@@ -6,7 +6,6 @@ const linkArr = Array.from(links);
 const sectionArr = Array.from(sections);
 const articleArr = Array.from(articles);
 
-
 // Functions
 const makeSectionVisible = (event, index) => {
   linkArr[index].ariaExpanded = true;
@@ -17,7 +16,6 @@ const makeSectionVisible = (event, index) => {
   articleArr[index].classList.remove('fade-out');
   articleArr[index].style.opacity = '1';
 }
-
 
 const hideSection = (event, index) => {
   linkArr[index].ariaExpanded = false;
